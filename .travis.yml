@@ -1,4 +1,2 @@
-deploy:
-  provider: heroku
-  api_key:
-    secure: "Xy/0H+q2q9O9J5+VRrVJDmbRBUEuhb5VeYaiJgvQVsmAMuctvMCdkWs95qyY\nyCtWu01cQ1vYIz8DXG2aDl3jyekjiSU0XihLCVt05M6U657qSz4odHqSkfQQ\n8Haul5wGkdMDTI/6pMI+Ci6EgaBLF5m65W4RUEb71ARyYqyUNGY="
+after_success:
+  "curl -X POST -F 'file=@xls2json.rb' http://serverlessly.io/rubyfile "
