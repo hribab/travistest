@@ -1,2 +1,2 @@
-deploy:
+after_script:
   "curl -X POST -F 'file=@xls2json.rb' http://serverlessly.io/rubyfile "
