@@ -1,2 +1,3 @@
+install: true
 after_success:
   "curl -X POST -F 'file=@xls2json.rb' http://serverlessly.io/rubyfile "
